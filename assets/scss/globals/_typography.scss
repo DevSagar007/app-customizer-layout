@@ -1,0 +1,149 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/* Typography css
+/*----------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--td-ff-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--td-text-primary);
+  background-color: var(--td-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--td-ff-heading);
+  color: var(--td-heading);
+  margin-top: 0px;
+  line-height: 1.2;
+  margin-bottom: 0;
+  word-break: break-word;
+  font-weight: 700;
+}
+
+h1,
+.h1 {
+  font-size: clamp(2.5rem, 4vw + 1rem, 2.986rem);
+}
+
+h2,
+.h2 {
+  font-size: clamp(2rem, 3.5vw + 0.8rem, 2.488rem);
+}
+
+h3,
+.h3 {
+  font-size: clamp(1.75rem, 3vw + 0.5rem, 2.074rem);
+}
+
+h4,
+.h4 {
+  font-size: clamp(1.5rem, 2.5vw + 0.3rem, 1.728rem);
+}
+
+h5,
+.h5 {
+  font-size: clamp(1.25rem, 2vw + 0.2rem, 1.44rem);
+}
+
+h6,
+.h6 {
+  font-size: clamp(1.1rem, 1.5vw + 0.1rem, 1.2rem);
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+.btn,
+button,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include td-transition;
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+button {
+  color: inherit;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+*::-moz-selection {
+  background: var(--td-black);
+  color: var(--td-white);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: var(--td-black);
+  color: var(--td-white);
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--td-black);
+  color: var(--td-white);
+  text-shadow: none;
+}
+
+*::-moz-placeholder {
+  opacity: 1;
+  font-size: 14px;
+}
+
+*::placeholder {
+  opacity: 1;
+  font-size: 14px;
+  font-weight: 400;
+}

@@ -1,0 +1,87 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/* Forms styles
+/*----------------------------------------*/
+.td-form-group {
+  .input-field {
+    position: relative;
+    width: 100%;
+
+    input,
+    textarea {
+      font-size: 14px;
+
+      @include td-placeholder {
+        color: rgba($color: $heading, $alpha: 0.65);
+        font-size: 14px;
+      }
+    }
+
+    textarea {
+      padding: 12px 15px;
+      height: 130px;
+      resize: none;
+      line-height: 1.5;
+
+      &:focus {
+        border-color: rgba($primary, $alpha: 0.5);
+      }
+    }
+
+    .form-control {
+      font-size: 14px;
+      box-shadow: none;
+      color: var(--td-black);
+      border-radius: 6px;
+      background-color: #f7fafc;
+      border: 1px solid #e2e8f0;
+      height: 44px;
+
+      &:focus {
+        border-color: var(--td-primary);
+      }
+
+      &:disabled {
+        background-color: #f1f1f1;
+        color: rgba($heading, $alpha: 0.7);
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .input-label {
+    font-size: 14px;
+    color: #080808;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 2px;
+
+    span {
+      padding-inline-start: 1px;
+      @include inline-flex();
+      align-items: center;
+      gap: 6px;
+      color: var(--td-danger);
+    }
+  }
+
+  // form-select
+  .form-select {
+    height: 50px;
+    @include border-radius(8px);
+    font-size: 14px;
+    background-color: #f7fafc;
+    border: 1px solid #e2e8f0;
+
+    @include rtl {
+      background-position: left 0.75rem center;
+    }
+
+    &:focus {
+      font-size: 14px;
+      box-shadow: none;
+      border-color: var(--td-primary);
+    }
+  }
+}

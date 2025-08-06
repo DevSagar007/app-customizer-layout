@@ -1,0 +1,93 @@
+// Color Variables
+// Common Color
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$placeholder: #9A9DA7;
+$selection: hsl(0, 0%, 0%);
+
+// Body Color
+$body: #002F34;
+
+// Heading Color
+$heading: #080808;
+
+// Theme Color
+// $primary: #F75A5A;
+$primary: #0070FF;
+$secondary: #DB5353;
+
+// Text Color
+$text-primary: #334345;
+
+// Others Color
+$green: #03A66D;
+$success: #27ae60;
+$warning: #FFB547;
+$danger: #E4544B;
+$danger-alt: #F56C6C;
+$info: #3B82F6;
+
+//Toastr Colors
+$toastr-success: #1FC54D4D;
+$toastr-danger: #EB4E5C1A;
+$toastr-warning: #FE84014D;
+$toastr-info: #2E87E84D;
+
+// Gradients colors
+$gradient-1: #C340C0;
+$gradient-2: #FB405A;
+$gradient-3: #F7A34A;
+
+// Font Weight Variables  
+$fw-normal: normal;
+$td-fw-thin: 100;
+$td-fw-elight: 200;
+$td-fw-light: 300;
+$td-fw-regular: 400;
+$td-fw-medium: 500;
+$td-fw-sbold: 600;
+$td-fw-bold: 700;
+$td-fw-ebold: 800;
+$td-fw-black: 900;
+
+// Font Size Variables  
+$td-fs-body: 16px;
+$td-fs-p: 16px;
+$td-fs-h1: 52px;
+$td-fs-h2: 42px;
+$td-fs-h3: 32px;
+$td-fs-h4: 24px;
+$td-fs-h5: 20px;
+$td-fs-h6: 16px;
+
+// Responsive Variables
+
+// Ultra-wide screens
+$x3l: 'only screen and (min-width: 1600px) and (max-width: 1799.98px)';
+
+// Extra Extra Large (xxl)
+$xxl: 'only screen and (min-width: 1400px) and (max-width: 1599.98px)';
+
+// Extra Large (xl)
+$xl: 'only screen and (min-width: 1200px) and (max-width: 1399.98px)';
+
+// Large (lg)
+$lg: 'only screen and (min-width: 992px) and (max-width: 1199.98px)';
+
+// Medium (md)
+$md: 'only screen and (min-width: 768px) and (max-width: 991.98px)';
+
+// Small (sm)
+$sm: 'only screen and (min-width: 576px) and (max-width: 767.98px)';
+
+// Extra Small (xs)
+$xs: 'only screen and (max-width: 575.98px)';
+
+// Extra Extra Small (xxs)
+$xxs: 'only screen and (max-width: 480.98px)';
+
+// Mobile Breakpoints
+$mobile-xxs: 'only screen and (min-width: 0px) and (max-width: 374.98px)';
+$mobile-xs: 'only screen and (min-width: 375px) and (max-width: 424.98px)';
+$mobile-sm: 'only screen and (min-width: 425px) and (max-width: 479.98px)';
+$mobile-md: 'only screen and (min-width: 480px) and (max-width: 575.98px)';
