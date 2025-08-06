@@ -34,8 +34,6 @@
       box-shadow: none;
       color: var(--td-black);
       border-radius: 6px;
-      background-color: #f7fafc;
-      border: 1px solid #e2e8f0;
       height: 44px;
 
       &:focus {
@@ -52,10 +50,9 @@
 
   .input-label {
     font-size: 14px;
-    color: #080808;
     display: block;
-    font-weight: 500;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
+    color: rgba(0, 0, 0, .7);
 
     span {
       padding-inline-start: 1px;
@@ -71,8 +68,8 @@
     height: 50px;
     @include border-radius(8px);
     font-size: 14px;
-    background-color: #f7fafc;
-    border: 1px solid #e2e8f0;
+    background-color: #fff;
+    border-color: #8d8f95;
 
     @include rtl {
       background-position: left 0.75rem center;

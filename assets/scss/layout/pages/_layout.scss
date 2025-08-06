@@ -56,21 +56,26 @@
 
 .app-sidebar-notice {
   padding: 16px 20px;
-  background: #fff;
+  background: var(--td-white);
+  border-bottom: 1px solid #dcdcde;
 }
 
-.app-sidebar-notice-inner {
-  .info-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+.app-sidebar-top-contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   .contents {
     h3 {
-      font-size: 1.125rem;
       font-weight: 500;
       line-height: 1.5;
+      font-size: 14px;
+    }
+
+    span {
+      color: #50575e;
+      font-size: 14px;
+      font-weight: 400;
     }
   }
 
@@ -86,7 +91,7 @@
 
 .app-sidebar-menu-item {
   align-items: center;
-  border-left: 4px solid #fff;
+  border-left: 4px solid var(--td-white);
   cursor: move;
   display: flex;
   justify-content: space-between;
@@ -96,11 +101,7 @@
   font-size: 14px;
   font-weight: 700;
   position: relative;
-  background: #fff;
-
-  &:first-child {
-    border-top: 1px solid #dcdcde;
-  }
+  background: var(--td-white);
 
   &:hover {
     background: #f5f5f5;
@@ -131,13 +132,17 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #fff;
+  background: var(--td-white);
   padding: 8px 12px;
   padding-left: 0;
 
   .contents {
+    h3 {
+      font-size: 14px;
+    }
+
     span {
-      font-size: 0.875rem;
+      font-size: 14px;
       font-weight: 400;
     }
 
@@ -169,7 +174,7 @@
 
 .sidebar-customize-back {
   align-items: center;
-  background: #fff;
+  background: var(--td-white);
   border: none;
   border-left: 4px solid transparent;
   border-right: 1px solid #dcdcde;
@@ -188,4 +193,13 @@
 
 .notice-text {
   display: none;
+}
+
+.app-sidebar-notice-contents {
+  p {
+    color: #50575e;
+    font-size: 13px;
+    margin: 0;
+    padding-top: 12px;
+  }
 }

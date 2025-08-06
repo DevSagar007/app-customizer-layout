@@ -1,6 +1,9 @@
+/*----------------------------------------*/
+/* Typography css
+/*----------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 :root {
-  --td-ff-body: "Plus Jakarta Sans", sans-serif;
-  --td-ff-heading: "Figtree", sans-serif;
+  --td-ff-body: "Inter", sans-serif;
   --td-ff-fontawesome: "Font Awesome 6 Pro";
   --td-white: #ffffff;
   --td-black: #000000;
@@ -42,9 +45,6 @@
   --td-fs-h6: 16px;
 }
 
-/*----------------------------------------*/
-/* Typography css
-/*----------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -67,7 +67,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--td-ff-heading);
   color: var(--td-heading);
   margin-top: 0px;
   line-height: 1.2;
@@ -249,8 +248,6 @@ button:focus {
   box-shadow: none;
   color: var(--td-black);
   border-radius: 6px;
-  background-color: #f7fafc;
-  border: 1px solid #e2e8f0;
   height: 44px;
 }
 .app-form-group .input-field .form-control:focus {
@@ -263,10 +260,9 @@ button:focus {
 }
 .app-form-group .input-label {
   font-size: 14px;
-  color: #080808;
   display: block;
-  font-weight: 500;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
+  color: rgba(0, 0, 0, 0.7);
 }
 .app-form-group .input-label span {
   padding-inline-start: 1px;
@@ -288,8 +284,8 @@ button:focus {
   -ms-border-radius: 8px;
   border-radius: 8px;
   font-size: 14px;
-  background-color: #f7fafc;
-  border: 1px solid #e2e8f0;
+  background-color: #fff;
+  border-color: #8d8f95;
 }
 [dir=rtl] .app-form-group .form-select {
   background-position: left 0.75rem center;
@@ -356,30 +352,36 @@ button:focus {
 
 .app-sidebar-notice {
   padding: 16px 20px;
-  background: #fff;
+  background: var(--td-white);
+  border-bottom: 1px solid #dcdcde;
 }
 
-.app-sidebar-notice-inner .info-item {
+.app-sidebar-top-contents {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.app-sidebar-notice-inner .contents h3 {
-  font-size: 1.125rem;
+.app-sidebar-top-contents .contents h3 {
   font-weight: 500;
   line-height: 1.5;
+  font-size: 14px;
 }
-.app-sidebar-notice-inner .icon {
+.app-sidebar-top-contents .contents span {
+  color: #50575e;
+  font-size: 14px;
+  font-weight: 400;
+}
+.app-sidebar-top-contents .icon {
   flex: 0 0 auto;
 }
-.app-sidebar-notice-inner .icon svg {
+.app-sidebar-top-contents .icon svg {
   width: 20px;
   height: 20px;
 }
 
 .app-sidebar-menu-item {
   align-items: center;
-  border-left: 4px solid #fff;
+  border-left: 4px solid var(--td-white);
   cursor: move;
   display: flex;
   justify-content: space-between;
@@ -389,10 +391,7 @@ button:focus {
   font-size: 14px;
   font-weight: 700;
   position: relative;
-  background: #fff;
-}
-.app-sidebar-menu-item:first-child {
-  border-top: 1px solid #dcdcde;
+  background: var(--td-white);
 }
 .app-sidebar-menu-item:hover {
   background: #f5f5f5;
@@ -422,12 +421,15 @@ button:focus {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #fff;
+  background: var(--td-white);
   padding: 8px 12px;
   padding-left: 0;
 }
+.customize-top-contents .contents h3 {
+  font-size: 14px;
+}
 .customize-top-contents .contents span {
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 400;
 }
 .customize-top-contents .contents h4 {
@@ -455,7 +457,7 @@ button:focus {
 
 .sidebar-customize-back {
   align-items: center;
-  background: #fff;
+  background: var(--td-white);
   border: none;
   border-left: 4px solid transparent;
   border-right: 1px solid #dcdcde;
@@ -472,6 +474,13 @@ button:focus {
 
 .notice-text {
   display: none;
+}
+
+.app-sidebar-notice-contents p {
+  color: #50575e;
+  font-size: 13px;
+  margin: 0;
+  padding-top: 12px;
 }
 
 /*# sourceMappingURL=styles.css.map */
