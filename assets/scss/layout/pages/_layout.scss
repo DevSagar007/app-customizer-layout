@@ -4,13 +4,15 @@
 /* App layout Styles
 /*----------------------------------------*/
 .app-body-main {
-  padding-left: 320px;
+  margin-left: 320px;
   display: flex;
 }
+
 .app-page-body {
   min-height: 100vh;
   width: 100%;
 }
+
 .app-sidebar-area {
   position: fixed;
   top: 0;
@@ -21,23 +23,25 @@
   left: 0;
   overflow: auto;
 }
-.app-customize-main {
+
+.app-sidebar-main {
   border: 1px solid #dcdcde;
   height: 100vh;
-  overflow: hidden;
   overflow: hidden;
   background-color: #f0f0f1;
   display: flex;
   position: fixed;
   width: 320px;
 }
-.app-customize-top {
+
+.app-sidebar-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 50px;
   padding: 7px 12px 7px 0;
   position: relative;
+
   .close {
     align-items: center;
     border-right: 1px solid #dcdcde;
@@ -49,16 +53,19 @@
     width: 50px;
   }
 }
-.app-customize-sidebar {
+
+.app-sidebar-notice {
   padding: 16px 20px;
   background: #fff;
 }
-.app-customize-header {
+
+.app-sidebar-notice-inner {
   .info-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   .contents {
     h3 {
       font-size: 1.125rem;
@@ -66,15 +73,18 @@
       line-height: 1.5;
     }
   }
+
   .icon {
     flex: 0 0 auto;
+
     svg {
       width: 20px;
       height: 20px;
     }
   }
 }
-.customize-menu-item {
+
+.app-sidebar-menu-item {
   align-items: center;
   border-left: 4px solid #fff;
   cursor: move;
@@ -87,14 +97,17 @@
   font-weight: 700;
   position: relative;
   background: #fff;
+
   &:first-child {
     border-top: 1px solid #dcdcde;
   }
+
   &:hover {
     background: #f5f5f5;
     border-left: 4px solid #ff4a17;
   }
 }
+
 .app-customize-area {
   background-color: inherit;
   flex: none;
@@ -109,37 +122,37 @@
   width: 320px;
   border-left: 1px solid #ddd;
 }
+
 .app-customize-area.active {
   left: 0;
 }
+
 .customize-top-contents {
   display: flex;
   align-items: center;
   gap: 12px;
-  justify-content: space-between;
   background: #fff;
   padding: 8px 12px;
   padding-left: 0;
-  .inner {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    .contents {
-      span {
-        font-size: 0.875rem;
-        font-weight: 400;
-      }
-      h4 {
-        font-size: 18px;
-        font-weight: 500;
-      }
+
+  .contents {
+    span {
+      font-size: 0.875rem;
+      font-weight: 400;
+    }
+
+    h4 {
+      font-size: 18px;
+      font-weight: 500;
     }
   }
 }
+
 .customize-inner-contents {
   padding: 10px;
 }
-.app-customize-container {
+
+.app-sidebar-container {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -148,10 +161,12 @@
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+
   &::-webkit-scrollbar {
     display: none;
   }
 }
+
 .sidebar-customize-back {
   align-items: center;
   background: #fff;
@@ -164,11 +179,13 @@
   justify-content: center;
   height: 46px;
 }
+
 .notice-show-toggle {
   &:hover {
     color: #ff4a17;
   }
 }
+
 .notice-text {
   display: none;
 }

@@ -197,54 +197,54 @@ button:focus {
 /*----------------------------------------*/
 /* Forms styles
 /*----------------------------------------*/
-.td-form-group .input-field {
+.app-form-group .input-field {
   position: relative;
   width: 100%;
 }
-.td-form-group .input-field input,
-.td-form-group .input-field textarea {
+.app-form-group .input-field input,
+.app-form-group .input-field textarea {
   font-size: 14px;
 }
-.td-form-group .input-field input::-webkit-input-placeholder,
-.td-form-group .input-field textarea::-webkit-input-placeholder {
+.app-form-group .input-field input::-webkit-input-placeholder,
+.app-form-group .input-field textarea::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: rgba(8, 8, 8, 0.65);
   font-size: 14px;
 }
-.td-form-group .input-field input::-moz-placeholder,
-.td-form-group .input-field textarea::-moz-placeholder {
+.app-form-group .input-field input::-moz-placeholder,
+.app-form-group .input-field textarea::-moz-placeholder {
   /* Firefox 19+ */
   color: rgba(8, 8, 8, 0.65);
   font-size: 14px;
 }
-.td-form-group .input-field input:-moz-placeholder,
-.td-form-group .input-field textarea:-moz-placeholder {
+.app-form-group .input-field input:-moz-placeholder,
+.app-form-group .input-field textarea:-moz-placeholder {
   /* Firefox 4-18 */
   color: rgba(8, 8, 8, 0.65);
   font-size: 14px;
 }
-.td-form-group .input-field input:-ms-input-placeholder,
-.td-form-group .input-field textarea:-ms-input-placeholder {
+.app-form-group .input-field input:-ms-input-placeholder,
+.app-form-group .input-field textarea:-ms-input-placeholder {
   /* IE 10+  Edge*/
   color: rgba(8, 8, 8, 0.65);
   font-size: 14px;
 }
-.td-form-group .input-field input::placeholder,
-.td-form-group .input-field textarea::placeholder {
+.app-form-group .input-field input::placeholder,
+.app-form-group .input-field textarea::placeholder {
   /* MODERN BROWSER */
   color: rgba(8, 8, 8, 0.65);
   font-size: 14px;
 }
-.td-form-group .input-field textarea {
+.app-form-group .input-field textarea {
   padding: 12px 15px;
   height: 130px;
   resize: none;
   line-height: 1.5;
 }
-.td-form-group .input-field textarea:focus {
+.app-form-group .input-field textarea:focus {
   border-color: rgba(0, 112, 255, 0.5);
 }
-.td-form-group .input-field .form-control {
+.app-form-group .input-field .form-control {
   font-size: 14px;
   box-shadow: none;
   color: var(--td-black);
@@ -253,22 +253,22 @@ button:focus {
   border: 1px solid #e2e8f0;
   height: 44px;
 }
-.td-form-group .input-field .form-control:focus {
+.app-form-group .input-field .form-control:focus {
   border-color: var(--td-primary);
 }
-.td-form-group .input-field .form-control:disabled {
+.app-form-group .input-field .form-control:disabled {
   background-color: #f1f1f1;
   color: rgba(8, 8, 8, 0.7);
   cursor: not-allowed;
 }
-.td-form-group .input-label {
+.app-form-group .input-label {
   font-size: 14px;
   color: #080808;
   display: block;
   font-weight: 500;
   margin-bottom: 2px;
 }
-.td-form-group .input-label span {
+.app-form-group .input-label span {
   padding-inline-start: 1px;
   display: -webkit-inline-box;
   display: -moz-inline-box;
@@ -280,7 +280,7 @@ button:focus {
   gap: 6px;
   color: var(--td-danger);
 }
-.td-form-group .form-select {
+.app-form-group .form-select {
   height: 50px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -291,10 +291,10 @@ button:focus {
   background-color: #f7fafc;
   border: 1px solid #e2e8f0;
 }
-[dir=rtl] .td-form-group .form-select {
+[dir=rtl] .app-form-group .form-select {
   background-position: left 0.75rem center;
 }
-.td-form-group .form-select:focus {
+.app-form-group .form-select:focus {
   font-size: 14px;
   box-shadow: none;
   border-color: var(--td-primary);
@@ -305,7 +305,7 @@ button:focus {
 /* App layout Styles
 /*----------------------------------------*/
 .app-body-main {
-  padding-left: 320px;
+  margin-left: 320px;
   display: flex;
 }
 
@@ -325,10 +325,9 @@ button:focus {
   overflow: auto;
 }
 
-.app-customize-main {
+.app-sidebar-main {
   border: 1px solid #dcdcde;
   height: 100vh;
-  overflow: hidden;
   overflow: hidden;
   background-color: #f0f0f1;
   display: flex;
@@ -336,7 +335,7 @@ button:focus {
   width: 320px;
 }
 
-.app-customize-top {
+.app-sidebar-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -344,7 +343,7 @@ button:focus {
   padding: 7px 12px 7px 0;
   position: relative;
 }
-.app-customize-top .close {
+.app-sidebar-top .close {
   align-items: center;
   border-right: 1px solid #dcdcde;
   cursor: pointer;
@@ -355,30 +354,30 @@ button:focus {
   width: 50px;
 }
 
-.app-customize-sidebar {
+.app-sidebar-notice {
   padding: 16px 20px;
   background: #fff;
 }
 
-.app-customize-header .info-item {
+.app-sidebar-notice-inner .info-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.app-customize-header .contents h3 {
+.app-sidebar-notice-inner .contents h3 {
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 1.5;
 }
-.app-customize-header .icon {
+.app-sidebar-notice-inner .icon {
   flex: 0 0 auto;
 }
-.app-customize-header .icon svg {
+.app-sidebar-notice-inner .icon svg {
   width: 20px;
   height: 20px;
 }
 
-.customize-menu-item {
+.app-sidebar-menu-item {
   align-items: center;
   border-left: 4px solid #fff;
   cursor: move;
@@ -392,10 +391,10 @@ button:focus {
   position: relative;
   background: #fff;
 }
-.customize-menu-item:first-child {
+.app-sidebar-menu-item:first-child {
   border-top: 1px solid #dcdcde;
 }
-.customize-menu-item:hover {
+.app-sidebar-menu-item:hover {
   background: #f5f5f5;
   border-left: 4px solid #ff4a17;
 }
@@ -423,21 +422,15 @@ button:focus {
   display: flex;
   align-items: center;
   gap: 12px;
-  justify-content: space-between;
   background: #fff;
   padding: 8px 12px;
   padding-left: 0;
 }
-.customize-top-contents .inner {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.customize-top-contents .inner .contents span {
+.customize-top-contents .contents span {
   font-size: 0.875rem;
   font-weight: 400;
 }
-.customize-top-contents .inner .contents h4 {
+.customize-top-contents .contents h4 {
   font-size: 18px;
   font-weight: 500;
 }
@@ -446,7 +439,7 @@ button:focus {
   padding: 10px;
 }
 
-.app-customize-container {
+.app-sidebar-container {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -456,7 +449,7 @@ button:focus {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.app-customize-container::-webkit-scrollbar {
+.app-sidebar-container::-webkit-scrollbar {
   display: none;
 }
 
