@@ -29,7 +29,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     const menuItems = document.querySelectorAll(".app-sidebar-menu-item");
     const optionsPanel = document.querySelector(".app-customize-area");
-    const backButton = document.querySelector(".sidebar-customize-back");
+    const backButton = document.querySelector(".app-customize-back");
 
     // Add 'active' class
     menuItems.forEach((item) => {
