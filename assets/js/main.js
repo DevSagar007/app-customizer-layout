@@ -44,32 +44,9 @@
     });
   });
 
+  // Initialize file upload
   $(document).on("change", 'input[type="file"]', function (event) {
-    var $file = $(this),
-      $label = $file.next("label"),
-      $labelText = $label.find("span:first"),
-      $typeFileText = $label.find(".type-file-text"),
-      labelDefault = "Upload Image";
-
-    var fileName = $file.val().split("\\").pop(),
-      file = event.target.files[0],
-      fileType = file ? file.type.split("/")[0] : null,
-      tmppath = file ? URL.createObjectURL(file) : null;
-
-    if (fileName) {
-      if (fileType === "image") {
-        $label
-          .addClass("file-ok")
-          .css("background-image", "url(" + tmppath + ")");
-      } else {
-        $label.addClass("file-ok").css("background-image", "none");
-      }
-      $labelText.text(fileName);
-      $typeFileText.hide();
-      $label.siblings(".file-upload-close").show();
-    } else {
-      resetUpload($file, $label, $labelText, $typeFileText, labelDefault);
-    }
+    handleFileUpload(event.target.files[0], $(this));
   });
 
   $(document).on("click", ".file-upload-close", function () {
@@ -79,11 +56,62 @@
       $label = $fileInput.next("label"),
       $labelText = $label.find("span:first"),
       $typeFileText = $label.find(".type-file-text"),
-      labelDefault = "Upload Image";
+      labelDefault = "Drag and drop a file here or click to select a file";
 
     resetUpload($fileInput, $label, $labelText, $typeFileText, labelDefault);
   });
 
+  // Drag & Drop Events
+  $(document).on("dragover", ".drop-zone", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).addClass("dragover");
+  });
+
+  $(document).on("dragleave", ".drop-zone", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).removeClass("dragover");
+  });
+
+  $(document).on("drop", ".drop-zone", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).removeClass("dragover");
+
+    var files = e.originalEvent.dataTransfer.files;
+    if (files.length > 0) {
+      var $input = $(this).siblings('input[type="file"]');
+      handleFileUpload(files[0], $input);
+    }
+  });
+
+  // Handle file upload logic
+  function handleFileUpload(file, $fileInput) {
+    var $label = $fileInput.next("label"),
+      $labelText = $label.find("span:first"),
+      $typeFileText = $label.find(".type-file-text"),
+      labelDefault = "Drag and drop a file here or click to select a file",
+      fileType = file ? file.type.split("/")[0] : null,
+      tmppath = file ? URL.createObjectURL(file) : null;
+
+    if (file) {
+      if (fileType === "image") {
+        $label
+          .addClass("file-ok")
+          .css("background-image", "url(" + tmppath + ")");
+      } else {
+        $label.addClass("file-ok").css("background-image", "none");
+      }
+      $labelText.text(file.name);
+      $typeFileText.hide();
+      $label.siblings(".file-upload-close").show();
+    } else {
+      resetUpload($fileInput, $label, $labelText, $typeFileText, labelDefault);
+    }
+  }
+
+  // Reset upload
   function resetUpload(
     $fileInput,
     $label,

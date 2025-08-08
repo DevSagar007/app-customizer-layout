@@ -113,27 +113,29 @@
                               <!-- Site Title -->
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="siteTitle">Site Title</label>
+                                    <label class="app-form-label" for="siteTitle">Site Title</label>
                                     <div class="input-field">
                                        <input type="text" id="siteTitle" name="site_title" class="form-control" value="Theme Name">
                                     </div>
+                                    <p class="form-feedback">This field is required</p>
                                  </div>
                               </div>
 
                               <!-- Tagline -->
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="tagline">Tagline</label>
+                                    <label class="app-form-label" for="tagline">Tagline</label>
                                     <div class="input-field">
                                        <input type="text" id="tagline" name="tagline" class="form-control" value="Arino Creative Agency Script">
                                     </div>
+                                    <p class="form-feedback">This field is required</p>
                                  </div>
                               </div>
 
                               <!-- Meta Title -->
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="metaTitle">Meta Title</label>
+                                    <label class="app-form-label" for="metaTitle">Meta Title</label>
                                     <div class="input-field">
                                        <input type="text" id="metaTitle" name="meta_title" class="form-control" value="Set Your Title">
                                     </div>
@@ -143,7 +145,7 @@
                               <!-- Meta Tags -->
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="metaTags">Meta Tags</label>
+                                    <label class="app-form-label" for="metaTags">Meta Tags</label>
                                     <div class="input-field">
                                        <input type="text" id="metaTags" name="meta_tags" class="form-control" value="HTML, laravel, React">
                                     </div>
@@ -153,7 +155,7 @@
                               <!-- Meta Description -->
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="metaDescription">Meta Description</label>
+                                    <label class="app-form-label" for="metaDescription">Meta Description</label>
                                     <div class="input-field">
                                        <textarea class="form-control" id="metaDescription"
                                           name="meta_description">Welcome to the future of creative agency website with Arino Laravel Script! Our cutting-edge Creative Agency Laravel Script is built with the latest technologies and features to provide you with a seamless and intuitive user experience.</textarea>
@@ -164,13 +166,14 @@
                               <!-- Site Logo -->
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="siteLogo">Site Logo</label>
+                                    <label class="app-form-label" for="siteLogo">Site Logo</label>
                                     <div class="input-field">
                                        <div class="upload-custom-file">
                                           <input type="file" id="siteLogo" name="site_logo" class="upload-input"
                                              accept=".gif, .jpg, .png, .jpeg, .webp, .pdf, .svg">
-                                          <label for="siteLogo">
+                                          <label for="siteLogo" class="drop-zone">
                                              <span><b>Drag and drop a file here or click to select a file</b></span>
+                                             <div class="type-file-text"></div>
                                           </label>
                                           <button type="button" class="file-upload-close" style="display: none;">
                                              <i class="fa-regular fa-trash-can"></i>
@@ -183,13 +186,14 @@
                               <!-- Site Favicon -->
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="siteFavicon">Site Favicon</label>
+                                    <label class="app-form-label" for="siteFavicon">Site Favicon</label>
                                     <div class="input-field">
                                        <div class="upload-custom-file">
-                                          <input type="file" id="siteFavicon" name="site_favicon" class="upload-input"
+                                          <input type="file" id="siteFavicon" name="site_logo" class="upload-input"
                                              accept=".gif, .jpg, .png, .jpeg, .webp, .pdf, .svg">
-                                          <label for="siteFavicon">
+                                          <label for="siteFavicon" class="drop-zone">
                                              <span><b>Drag and drop a file here or click to select a file</b></span>
+                                             <div class="type-file-text"></div>
                                           </label>
                                           <button type="button" class="file-upload-close" style="display: none;">
                                              <i class="fa-regular fa-trash-can"></i>
@@ -202,18 +206,20 @@
                               <!-- Meta Image -->
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="metaImage">Meta Image</label>
+                                    <label class="app-form-label" for="metaImage">Meta Image</label>
                                     <div class="input-field">
                                        <div class="upload-custom-file">
-                                          <input type="file" id="metaImage" name="meta_image" class="upload-input"
+                                          <input type="file" id="metaImage" name="site_logo" class="upload-input"
                                              accept=".gif, .jpg, .png, .jpeg, .webp, .pdf, .svg">
-                                          <label for="metaImage">
+                                          <label for="metaImage" class="drop-zone">
                                              <span><b>Drag and drop a file here or click to select a file</b></span>
+                                             <div class="type-file-text"></div>
                                           </label>
                                           <button type="button" class="file-upload-close" style="display: none;">
                                              <i class="fa-regular fa-trash-can"></i>
                                           </button>
                                        </div>
+                                       <p class="form-feedback">This field is required</p>
                                     </div>
                                  </div>
                               </div>
@@ -222,7 +228,7 @@
                               <div class="col-lg-12">
                                  <div class="app-form-group">
                                     <div class="row">
-                                       <div class="col-lg-6"><label class="input-label">Sitemap URL</label></div>
+                                       <div class="col-lg-6"><label class="app-form-label">Sitemap URL</label></div>
                                        <div class="col-lg-6 text-end">
                                           <a class="site-map-title" href="https://arino-laravel.laralink.com/admin/generate-sitemap">Generate Sitemap</a>
                                        </div>
@@ -260,7 +266,7 @@
                               <!-- Primary Font -->
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="primaryFont">Primary Font<span>*</span></label>
+                                    <label class="app-form-label" for="primaryFont">Primary Font<span>*</span></label>
                                     <div class="input-field">
                                        <select class="form-select" id="primaryFont" name="primary_font">
                                           <option value="0">Select Font</option>
@@ -277,7 +283,7 @@
                               <!-- Secondary Font -->
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="secondaryFont">Secondary Font<span>*</span></label>
+                                    <label class="app-form-label" for="secondaryFont">Secondary Font<span>*</span></label>
                                     <div class="input-field">
                                        <select class="form-select" id="secondaryFont" name="secondary_font">
                                           <option value="0">Select Font</option>
@@ -294,7 +300,7 @@
                               <!-- Code -->
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="code">Code</label>
+                                    <label class="app-form-label" for="code">Code</label>
                                     <div class="input-field">
                                        <textarea class="form-control" id="code"
                                           name="meta_description"></textarea>
@@ -307,7 +313,7 @@
                                  <div class="app-form-group">
                                     <div class="input-field">
                                        <div class="color-picker d-flex gap-2">
-                                          <label for="input-label">Site Color</label>
+                                          <label for="app-form-label">Site Color</label>
                                           <input type="color" id="head" name="head" value="#e66465" />
                                        </div>
                                     </div>
@@ -317,7 +323,7 @@
                               <!-- Social Media Links -->
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="facebookUrl">Facebook URL</label>
+                                    <label class="app-form-label" for="facebookUrl">Facebook URL</label>
                                     <div class="input-field">
                                        <input type="url" id="facebookUrl" name="facebook_url" class="form-control" value="#">
                                     </div>
@@ -326,7 +332,7 @@
                               
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="linkedinUrl">LinkedIn URL</label>
+                                    <label class="app-form-label" for="linkedinUrl">LinkedIn URL</label>
                                     <div class="input-field">
                                        <input type="url" id="linkedinUrl" name="linkedin_url" class="form-control" value="#">
                                     </div>
@@ -335,7 +341,7 @@
                               
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="twitterUrl">Twitter URL</label>
+                                    <label class="app-form-label" for="twitterUrl">Twitter URL</label>
                                     <div class="input-field">
                                        <input type="url" id="twitterUrl" name="twitter_url" class="form-control" value="#">
                                     </div>
@@ -344,7 +350,7 @@
                               
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="youtubeUrl">YouTube URL</label>
+                                    <label class="app-form-label" for="youtubeUrl">YouTube URL</label>
                                     <div class="input-field">
                                        <input type="url" id="youtubeUrl" name="youtube_url" class="form-control" value="#">
                                     </div>
@@ -353,7 +359,7 @@
                               
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="slackUrl">Slack URL</label>
+                                    <label class="app-form-label" for="slackUrl">Slack URL</label>
                                     <div class="input-field">
                                        <input type="url" id="slackUrl" name="slack_url" class="form-control" value="#">
                                     </div>
@@ -362,7 +368,7 @@
                               
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="whatsappUrl">WhatsApp URL</label>
+                                    <label class="app-form-label" for="whatsappUrl">WhatsApp URL</label>
                                     <div class="input-field">
                                        <input type="url" id="whatsappUrl" name="whatsapp_url" class="form-control">
                                     </div>
@@ -371,7 +377,7 @@
                               
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="telegramUrl">Telegram URL</label>
+                                    <label class="app-form-label" for="telegramUrl">Telegram URL</label>
                                     <div class="input-field">
                                        <input type="url" id="telegramUrl" name="telegram_url" class="form-control">
                                     </div>
@@ -380,7 +386,7 @@
                               
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="instagramUrl">Instagram URL</label>
+                                    <label class="app-form-label" for="instagramUrl">Instagram URL</label>
                                     <div class="input-field">
                                        <input type="url" id="instagramUrl" name="instagram_url" class="form-control">
                                     </div>
@@ -389,7 +395,7 @@
                               
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="pinterestUrl">Pinterest URL</label>
+                                    <label class="app-form-label" for="pinterestUrl">Pinterest URL</label>
                                     <div class="input-field">
                                        <input type="url" id="pinterestUrl" name="pinterest_url" class="form-control">
                                     </div>
@@ -398,7 +404,7 @@
                               
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="redditUrl">Reddit URL</label>
+                                    <label class="app-form-label" for="redditUrl">Reddit URL</label>
                                     <div class="input-field">
                                        <input type="url" id="redditUrl" name="reddit_url" class="form-control">
                                     </div>
@@ -407,7 +413,7 @@
                               
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="snapchatUrl">Snapchat URL</label>
+                                    <label class="app-form-label" for="snapchatUrl">Snapchat URL</label>
                                     <div class="input-field">
                                        <input type="url" id="snapchatUrl" name="snapchat_url" class="form-control">
                                     </div>
@@ -416,7 +422,7 @@
                               
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="tiktokUrl">TikTok URL</label>
+                                    <label class="app-form-label" for="tiktokUrl">TikTok URL</label>
                                     <div class="input-field">
                                        <input type="url" id="tiktokUrl" name="tiktok_url" class="form-control">
                                     </div>
@@ -425,7 +431,7 @@
                               
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="tumblrUrl">Tumblr URL</label>
+                                    <label class="app-form-label" for="tumblrUrl">Tumblr URL</label>
                                     <div class="input-field">
                                        <input type="url" id="tumblrUrl" name="tumblr_url" class="form-control">
                                     </div>
@@ -434,7 +440,7 @@
                               
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="vkUrl">VK URL</label>
+                                    <label class="app-form-label" for="vkUrl">VK URL</label>
                                     <div class="input-field">
                                        <input type="url" id="vkUrl" name="vk_url" class="form-control">
                                     </div>
@@ -443,7 +449,7 @@
                               
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="discordUrl">Discord URL</label>
+                                    <label class="app-form-label" for="discordUrl">Discord URL</label>
                                     <div class="input-field">
                                        <input type="url" id="discordUrl" name="discord_url" class="form-control">
                                     </div>
@@ -481,7 +487,6 @@
    <script src="assets/js/jquery-3.7.1.min.js"></script>
    <script src="assets/js/bootstrap.bundle.min.js"></script>
    <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>

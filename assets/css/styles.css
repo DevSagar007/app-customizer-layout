@@ -291,13 +291,13 @@ button:focus {
   box-shadow: none;
   border-color: var(--td-primary);
 }
-.app-form-group .input-label {
+.app-form-group .app-form-label {
   font-size: 14px;
   display: block;
   margin-bottom: 3px;
   color: rgba(0, 0, 0, 0.7);
 }
-.app-form-group .input-label span {
+.app-form-group .app-form-label span {
   padding-inline-start: 1px;
   display: -webkit-inline-box;
   display: -moz-inline-box;
@@ -309,6 +309,13 @@ button:focus {
   gap: 6px;
   color: var(--td-danger);
 }
+.app-form-group .form-feedback {
+  font-size: 12px;
+  margin-top: 2px;
+  color: var(--td-danger);
+  font-weight: 500;
+  margin-bottom: 0;
+}
 .app-form-group code {
   color: var(--td-danger);
 }
@@ -319,7 +326,7 @@ button:focus {
   align-items: center;
   margin-bottom: 15px;
 }
-.file-upload-wrap .input-label {
+.file-upload-wrap .app-form-label {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 5px;
