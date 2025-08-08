@@ -38,7 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
+  height: 44px;
   padding: 7px 12px 7px 0;
   position: relative;
 
@@ -123,6 +123,7 @@
   transition: all 0.3s ease;
   width: 320px;
   border-right: 1px solid #ddd;
+  padding-bottom: 50px;
 }
 
 .app-customize-area.active {
@@ -188,8 +189,11 @@
 }
 
 .app-customize-contents {
+  h4 {
+    color: #50575e;
+    font-size: 14px;
+  }
 
-  h4,
   span {
     color: #50575e;
     font-size: 14px;

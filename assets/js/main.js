@@ -43,4 +43,58 @@
       optionsPanel.classList.remove("active");
     });
   });
+
+  $(document).on("change", 'input[type="file"]', function (event) {
+    var $file = $(this),
+      $label = $file.next("label"),
+      $labelText = $label.find("span:first"),
+      $typeFileText = $label.find(".type-file-text"),
+      labelDefault = "Upload Image";
+
+    var fileName = $file.val().split("\\").pop(),
+      file = event.target.files[0],
+      fileType = file ? file.type.split("/")[0] : null,
+      tmppath = file ? URL.createObjectURL(file) : null;
+
+    if (fileName) {
+      if (fileType === "image") {
+        $label
+          .addClass("file-ok")
+          .css("background-image", "url(" + tmppath + ")");
+      } else {
+        $label.addClass("file-ok").css("background-image", "none");
+      }
+      $labelText.text(fileName);
+      $typeFileText.hide();
+      $label.siblings(".file-upload-close").show();
+    } else {
+      resetUpload($file, $label, $labelText, $typeFileText, labelDefault);
+    }
+  });
+
+  $(document).on("click", ".file-upload-close", function () {
+    var $button = $(this),
+      $uploadWrapper = $button.closest(".upload-custom-file"),
+      $fileInput = $uploadWrapper.find('input[type="file"]'),
+      $label = $fileInput.next("label"),
+      $labelText = $label.find("span:first"),
+      $typeFileText = $label.find(".type-file-text"),
+      labelDefault = "Upload Image";
+
+    resetUpload($fileInput, $label, $labelText, $typeFileText, labelDefault);
+  });
+
+  function resetUpload(
+    $fileInput,
+    $label,
+    $labelText,
+    $typeFileText,
+    labelDefault
+  ) {
+    $fileInput.val("");
+    $label.removeClass("file-ok").css("background-image", "none");
+    $labelText.text(labelDefault);
+    $typeFileText.show();
+    $label.siblings(".file-upload-close").hide();
+  }
 })(jQuery);

@@ -45,7 +45,8 @@
                                  <h3>Website</h3>
                               </div>
                               <div class="icon">
-                                 <button class="notice-show-toggle"><i  class="fa-regular fa-circle-question"></i></button>
+                                 <button class="notice-show-toggle"><i
+                                       class="fa-regular fa-circle-question"></i></button>
                               </div>
                            </div>
                         </div>
@@ -106,15 +107,15 @@
                         </div>
                      </div>
                      <div class="app-customize-forms">
-                        <form action="#">
+                        <form action="#" method="post" enctype="multipart/form-data">
                            <div class="row gy-3">
 
                               <!-- Site Title -->
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label">Site Title</label>
+                                    <label class="input-label" for="siteTitle">Site Title</label>
                                     <div class="input-field">
-                                       <input type="text" class="form-control" value="theme name">
+                                       <input type="text" id="siteTitle" name="site_title" class="form-control" value="Theme Name">
                                     </div>
                                  </div>
                               </div>
@@ -122,93 +123,168 @@
                               <!-- Tagline -->
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label">Tagline</label>
+                                    <label class="input-label" for="tagline">Tagline</label>
                                     <div class="input-field">
-                                       <input type="text" class="form-control" value="tagline">
+                                       <input type="text" id="tagline" name="tagline" class="form-control" value="Arino Creative Agency Script">
                                     </div>
                                  </div>
                               </div>
 
-                              <!-- Title -->
+                              <!-- Meta Title -->
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label">Title</label>
+                                    <label class="input-label" for="metaTitle">Meta Title</label>
                                     <div class="input-field">
-                                       <input type="text" class="form-control" value="Creativity In Our Blood Line">
+                                       <input type="text" id="metaTitle" name="meta_title" class="form-control" value="Set Your Title">
                                     </div>
                                  </div>
                               </div>
 
-                              <!-- Title -->
+                              <!-- Meta Tags -->
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label">Sub Title</label>
+                                    <label class="input-label" for="metaTags">Meta Tags</label>
                                     <div class="input-field">
-                                       <input type="text" class="form-control"
-                                          value="We deliver best problem solving solution for our client and provide finest finishing product in present and upcoming future.">
+                                       <input type="text" id="metaTags" name="meta_tags" class="form-control" value="HTML, laravel, React">
                                     </div>
                                  </div>
                               </div>
 
-                              <!-- Action link text -->
+                              <!-- Meta Description -->
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label">Action link text</label>
+                                    <label class="input-label" for="metaDescription">Meta Description</label>
                                     <div class="input-field">
-                                       <input type="text" class="form-control" value="Get a Quote">
+                                       <textarea class="form-control" id="metaDescription"
+                                          name="meta_description">Welcome to the future of creative agency website with Arino Laravel Script! Our cutting-edge Creative Agency Laravel Script is built with the latest technologies and features to provide you with a seamless and intuitive user experience.</textarea>
                                     </div>
                                  </div>
                               </div>
 
-                              <!-- Social link Text -->
-                              <div class="col-lg-12">
-                                 <div class="app-form-group">
-                                    <label class="input-label">Action link text</label>
-                                    <div class="input-field">
-                                       <input type="text" class="form-control" value="Follow Us">
+                              <!-- Site Logo -->
+                              <div class="col-lg-12 app-form-group">
+                                 <label class="input-label" for="siteLogo">Site Logo</label>
+                                 <div class="input-field">
+                                    <div class="upload-custom-file">
+                                       <input type="file" id="siteLogo" name="site_logo" class="upload-input"
+                                          accept=".gif, .jpg, .png, .jpeg, .webp, .pdf, .svg">
+                                       <label for="siteLogo">
+                                          <span><b>Drag and drop a file here or click to select a file</b></span>
+                                       </label>
+                                       <button type="button" class="file-upload-close" style="display: none;">
+                                          <i class="fa-regular fa-trash-can"></i>
+                                       </button>
                                     </div>
                                  </div>
                               </div>
 
-                              <!-- Last Name -->
-                              <div class="col-lg-12">
-                                 <div class="app-form-group">
-                                    <label class="input-label" for="l-name">Last Name<span>*</span></label>
-                                    <div class="input-field">
-                                       <input type="text" class="form-control" id="l-name" name="last_name" required>
+                              <!-- Site Favicon -->
+                              <div class="col-lg-12 app-form-group">
+                                 <label class="input-label" for="siteFavicon">Site Favicon</label>
+                                 <div class="input-field">
+                                    <div class="upload-custom-file">
+                                       <input type="file" id="siteFavicon" name="site_favicon" class="upload-input"
+                                          accept=".gif, .jpg, .png, .jpeg, .webp, .pdf, .svg">
+                                       <label for="siteFavicon">
+                                          <span><b>Drag and drop a file here or click to select a file</b></span>
+                                       </label>
+                                       <button type="button" class="file-upload-close" style="display: none;">
+                                          <i class="fa-regular fa-trash-can"></i>
+                                       </button>
                                     </div>
                                  </div>
                               </div>
 
-                              <!-- Email -->
-                              <div class="col-lg-12">
-                                 <div class="app-form-group">
-                                    <label class="input-label" for="email">Email address<span>*</span></label>
-                                    <div class="input-field">
-                                       <input type="email" class="form-control" id="email" name="email" required>
+                              <!-- Meta Image -->
+                              <div class="col-lg-12 app-form-group">
+                                 <label class="input-label" for="metaImage">Meta Image</label>
+                                 <div class="input-field">
+                                    <div class="upload-custom-file">
+                                       <input type="file" id="metaImage" name="meta_image" class="upload-input"
+                                          accept=".gif, .jpg, .png, .jpeg, .webp, .pdf, .svg">
+                                       <label for="metaImage">
+                                          <span><b>Drag and drop a file here or click to select a file</b></span>
+                                       </label>
+                                       <button type="button" class="file-upload-close" style="display: none;">
+                                          <i class="fa-regular fa-trash-can"></i>
+                                       </button>
                                     </div>
                                  </div>
                               </div>
 
-                              <!-- Phone -->
+                              <!-- Sitemap URL -->
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="phone">Phone Number<span>*</span></label>
-                                    <div class="input-field">
-                                       <input type="text" class="form-control" id="phone" name="phone" required>
+                                    <div class="row">
+                                       <div class="col-lg-6"><label class="input-label">Sitemap URL</label></div>
+                                       <div class="col-lg-6 text-end">
+                                          <a class="site-map-title" href="https://arino-laravel.laralink.com/admin/generate-sitemap">Generate Sitemap</a>
+                                       </div>
+                                    </div>
+                                    <code>https://arino-laravel.laralink.com/sitemap.xml</code>
+                                 </div>
+                              </div>
+
+                              <!-- Show Breadcrumbs Switch -->
+                              <div class="col-lg-12">
+                                 <div class="app-form-group">
+                                    <div class="toggle-item">
+                                       <div class="toggle-label">Is Show Breadcrumbs:</div>
+                                       <label class="toggle-switch">
+                                          <input type="checkbox" name="show_breadcrumbs" checked>
+                                          <span class="slider"></span>
+                                       </label>
                                     </div>
                                  </div>
                               </div>
 
-                              <!-- Username -->
+                              <!-- RTL Switch -->
                               <div class="col-lg-12">
                                  <div class="app-form-group">
-                                    <label class="input-label" for="u-name">Username<span>*</span></label>
-                                    <div class="input-field">
-                                       <input type="text" class="form-control" id="u-name" name="username" required>
+                                    <div class="toggle-item">
+                                       <div class="toggle-label">Enable RTL:</div>
+                                       <label class="toggle-switch">
+                                          <input type="checkbox" name="enable_rtl" checked>
+                                          <span class="slider"></span>
+                                       </label>
                                     </div>
                                  </div>
                               </div>
+
+                              <!-- Primary Font -->
+                              <div class="col-lg-12">
+                                 <div class="app-form-group">
+                                    <label class="input-label" for="primaryFont">Primary Font<span>*</span></label>
+                                    <div class="input-field">
+                                       <select class="form-select" id="primaryFont" name="primary_font">
+                                          <option value="0">Select Font</option>
+                                          <option value="Roboto">Roboto</option>
+                                          <option value="Poppins">Poppins</option>
+                                          <option value="Montserrat">Montserrat</option>
+                                          <option value="Lato">Lato</option>
+                                          <option value="Open Sans">Open Sans</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <!-- Secondary Font -->
+                              <div class="col-lg-12">
+                                 <div class="app-form-group">
+                                    <label class="input-label" for="secondaryFont">Secondary Font<span>*</span></label>
+                                    <div class="input-field">
+                                       <select class="form-select" id="secondaryFont" name="secondary_font">
+                                          <option value="0">Select Font</option>
+                                          <option value="Roboto">Roboto</option>
+                                          <option value="Poppins">Poppins</option>
+                                          <option value="Montserrat">Montserrat</option>
+                                          <option value="Lato">Lato</option>
+                                          <option value="Open Sans">Open Sans</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                              </div>
+
                            </div>
                         </form>
                      </div>
