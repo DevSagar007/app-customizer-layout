@@ -197,22 +197,27 @@ button:focus {
   font-size: 14px;
 }
 .app-form-group .input-field input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
   color: rgba(8, 8, 8, 0.65);
   font-size: 14px;
 }
 .app-form-group .input-field input::-moz-placeholder {
+  /* Firefox 19+ */
   color: rgba(8, 8, 8, 0.65);
   font-size: 14px;
 }
 .app-form-group .input-field input:-moz-placeholder {
+  /* Firefox 4-18 */
   color: rgba(8, 8, 8, 0.65);
   font-size: 14px;
 }
 .app-form-group .input-field input:-ms-input-placeholder {
+  /* IE 10+  Edge*/
   color: rgba(8, 8, 8, 0.65);
   font-size: 14px;
 }
 .app-form-group .input-field input::placeholder {
+  /* MODERN BROWSER */
   color: rgba(8, 8, 8, 0.65);
   font-size: 14px;
 }
@@ -367,6 +372,7 @@ button:focus {
   font-size: 14px;
   font-weight: 500;
   transition: color 0.3s;
+  color: rgba(8, 8, 8, 0.65);
 }
 .upload-custom-file label span b {
   font-weight: 500;
@@ -385,7 +391,7 @@ button:focus {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  border-color: var(--td-success);
+  border-color: var(--td-primary);
 }
 .upload-custom-file label.file-ok span {
   position: absolute;
@@ -393,7 +399,7 @@ button:focus {
   inset-inline-start: 0;
   width: 100%;
   padding: 0.3rem;
-  background-color: #8ccdaf;
+  background-color: rgb(228, 224, 247);
   font-weight: 500;
   font-size: 14px;
   margin: auto;
@@ -402,13 +408,6 @@ button:focus {
 }
 .upload-custom-file label.file-ok .upload-icon {
   display: none;
-}
-
-.upload-custom-file.without-image {
-  height: 167px;
-}
-.upload-custom-file.without-image label {
-  background-color: var(--td-text-primary);
 }
 
 .file-upload-close {
@@ -493,6 +492,12 @@ button:focus {
 .toggle-label {
   display: inline-block;
   font-size: 14px;
+}
+
+.site-map-title {
+  font-size: 14px;
+  display: inline-block;
+  color: var(--td-primary);
 }
 
 /* pages css*/

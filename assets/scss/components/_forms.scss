@@ -3,6 +3,7 @@
 /*----------------------------------------*/
 /* Forms styles
 /*----------------------------------------*/
+// Form group
 .app-form-group {
   .input-field {
     position: relative;
@@ -11,27 +12,7 @@
     input {
       font-size: 14px;
 
-      &::-webkit-input-placeholder {
-        color: rgba(8, 8, 8, 0.65);
-        font-size: 14px;
-      }
-
-      &::-moz-placeholder {
-        color: rgba(8, 8, 8, 0.65);
-        font-size: 14px;
-      }
-
-      &:-moz-placeholder {
-        color: rgba(8, 8, 8, 0.65);
-        font-size: 14px;
-      }
-
-      &:-ms-input-placeholder {
-        color: rgba(8, 8, 8, 0.65);
-        font-size: 14px;
-      }
-
-      &::placeholder {
+      @include td-placeholder {
         color: rgba(8, 8, 8, 0.65);
         font-size: 14px;
       }
@@ -145,6 +126,7 @@
   }
 }
 
+// File upload
 .file-upload-wrap {
   .top-content {
     display: flex;
@@ -209,6 +191,7 @@
       font-size: 14px;
       font-weight: 500;
       transition: color 0.3s;
+      color: rgba(8, 8, 8, 0.65);
 
       b {
         font-weight: 500;
@@ -232,7 +215,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    border-color: var(--td-success);
+    border-color: var(--td-primary);
 
     span {
       position: absolute;
@@ -240,7 +223,7 @@
       inset-inline-start: 0;
       width: 100%;
       padding: 0.3rem;
-      background-color: #8ccdaf;
+      background-color: rgb(228 224 247);
       font-weight: 500;
       font-size: 14px;
       margin: auto;
@@ -251,14 +234,6 @@
     .upload-icon {
       display: none;
     }
-  }
-}
-
-.upload-custom-file.without-image {
-  height: 167px;
-
-  label {
-    background-color: var(--td-text-primary);
   }
 }
 
@@ -294,6 +269,7 @@
   justify-content: center;
 }
 
+// Toggle switch
 .toggle-switch {
   position: relative;
   display: inline-block;
@@ -355,3 +331,9 @@
   font-size: 14px;
 }
 
+// Site map
+.site-map-title {
+  font-size: 14px;
+  display: inline-block;
+  color: var(--td-primary);
+}
